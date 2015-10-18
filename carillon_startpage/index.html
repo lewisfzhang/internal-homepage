@@ -1,65 +1,122 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE HTML>
 <head>
+	<title>Carillon Start Page</title>
+	<link rel="shortcut icon" href="library/favicon.png" type="image/png" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="library/jquery.js"></script>
-	<script type="text/javascript" src="library/main.js"></script>
+	<!--<script type="text/javascript" src="library/jquery.js"></script>
+	<script type="text/javascript" src="library/main.js"></script>-->
+	<link rel="stylesheet" type="text/css" media="screen" title="Default" href="library/style.css" />
 </head>
 <body>
-
-<!--
-	The URLs go below this comment block
-	in the following format:
-
-Heading Text here
-http://www.example.com
-http://www.example.net
-http://www.example.tv
-http://www.example.biz
-http://www.example.org
-http://www.example2.com
-http://example.com/foo/bar
-
-Second  heading here
-http://www.example.com
-http://www.example.com
-
-	The headings will be used as separators, and every heading will start a new
-	page. Every line that isn't an URL (start with http://), will be treated as
-	a heading.
-
-	Website Thumbnails should be placed to the "thumbnails" directory which you
-	will find from the same directory as this file.
-
-	The thumbnails should be named according the domain
-	name. For example if you have URL like "http://gocom.deviantart.com/",
-	the thumbnail would be named as "gocom.deviantart.com.png" (with out the quotes).
 	
-	So, for instance, thumbnails for following URLs would be:
+	<div id="staffButtons">
+		<button class="staffButton" onClick="staff('photo')">Photography Staff</button>
+		<button class="staffButton" onClick="staff('design')">Design Staff</button>
+		<button class="staffButton" onClick="staff('journalism')">Journalism Staff</button>
+		<button class="staffButton" onClick="staff('software')">Software Development Staff</button>
+	</div>
 	
-	http://wwww.example.com/path/to/something => www.example.com.png
-	http://example.net => example.net.png
+	<div id="heading">
+		<h1>Carillon Staff</h1> 
+	</div>
 	
-	Below are the example links bundled with the default package. You can replace
-	defaults with your own.
--->
+	<div id="linksDiv">
+		<div class="links">
+			<a href="https://carillon.slack.com" target="_blank"><img src="https://logo.clearbit.com/slack.com" greyscale="true"></a>
+			<p class="linkText">Slack</p>
+		</div>
+		
+		<!--No border for this logo b/c the edges are rounded-->
+		<div class="links">
+			<a href="https://trello.com/20152016carillon" target="_blank"><img src="https://logo.clearbit.com/trello.com" style="border-style: none;"></a>
+			<p class="linkText">Trello</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://carillon.ezofficeinventory.com" target="_blank"><img src="https://logo.clearbit.com/ezofficeinventory.com"></a>
+			<p class="linkText">EZOfficeInventory </p>
+		</div>
+		
+		<div class="links">
+			<a href="https://webs.bcp.org/mydrive/carillon" target="_blank"><img src="https://logo.clearbit.com/synergyservicescorp.com"></a>
+			<p class="linkText">Synergy Server</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://mail.bcp.org/owa" target="_blank"><img src="https://logo.clearbit.com/outlook.com"></a>
+			<p class="linkText">BCP Mail</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://carillon.pingboard.com" target="_blank"><img src="https://logo.clearbit.com/pingboard.com"></a>
+			<p class="linkText">Pingboard</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://bitbucket.org/carillon/" target="_blank"><img src="https://logo.clearbit.com/bitbucket.org"></a>
+			<p class="linkText">Bitbucket</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://bcp.instructure.com" target="_blank"><img src="https://logo.clearbit.com/canvas.instructure.com"></a>
+			<p class="linkText">Canvas</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://secure.zenfolio.com/carillon/login.html?return=http%3A%2F%2Fcarillon.zenfolio.com%2F" target="_blank"><img src="https://logo.clearbit.com/zenfolio.com"></a>
+			<p class="linkText">Zenfolio Login</p>
+		</div>
 
-Carillon Staff
+		<div class="links">
+			<a href="https://bcp.org/photos" target="_blank"><img src="https://logo.clearbit.com/zenfolio.com"></a>
+			<p class="linkText">Zenfolio Public</p>
+		</div>
+)
+		<div class="links">
+			<a href="https://carillon.camayak.com" target="_blank"><img src="thumbnails/camayak.png" width="128px" height="128px"></a>
+			<p class="linkText">Camayak</p>
+		</div>
 
-https://bcp.instructure.com/courses/1560
-https://trello.com/20142015carillonyearbook
-https://carillon.ezofficeinventory.com
-https://app.groupme.com/chats
-http://thecarillon.org/
-http://thecarillon.org/wp-admin
-https://secure.zenfolio.com/carillon/login.html?return=http%3A%2F%2Fcarillon.zenfolio.com%2F
-https://www.facebook.com/BCPCarillon
-https://twitter.com/BCPCarillon
-https://mail.bcp.org/owa
+		<div class="links">
+			<a href="http://thecarillon.org/wp-admin" target="_blank"><img src="https://logo.clearbit.com/wordpress.com"></a>
+			<p class="linkText">Wordpress</p>
+		</div>
 
-<!--
-	/URLs end here
--->
+		<div class="links">
+			<a href="https://bcp.org/schoolsuite" target="_blank"><img src="thumbnails/schoolsuite.jpg" width="128px" height="128px"></a>
+			<p class="linkText">Schoolsuite</p>
+		</div>
+		<div class="links">
+			<a href="http://thecarillon.org" target="_blank"><img src="https://logo.clearbit.com/thecarillon.org"></a>
+			<p class="linkText">Carillon Online</p>
+		</div>
+
+		<div class="links">
+			<a href="https://app.frontify.com/d/R2BVWFpXU1ef/odyssey-style-guide" target="_blank"><img src="https://logo.clearbit.com/frontify.com"></a>
+			<p class="linkText">Design Style Guide</p>
+		</div>
+
+		<div class="links">
+			<a href="https://pinterest.com" target="_blank"><img src="https://logo.clearbit.com/pinterest.com"></a>
+			<p class="linkText">Pinterest</p>
+		</div>
+
+		<div class="links">
+			<a href="https://twitter.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/twitter.com"></a>
+			<p class="linkText">Carillon Twitter</p>
+		</div>
+		
+		<div class="links">
+			<a href="https://facebook.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/facebook.com"></a>
+			<p class="linkText">Carillon FB</p>
+		</div>
+		
+		<!--No border for this logo b/c the edges are rounded-->
+		<div class="links">
+			<a href="https://instagram.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/instagram.com" style="border-style: none;"></a>
+			<p class="linkText">Carillon IG</p>
+		</div>
+	</div>
 
 </body>
 </html>

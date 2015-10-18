@@ -24,17 +24,6 @@
 */
 
 $(document).ready(function(){
-	
-/**
-	Add the extra stuff to the <head>,
-	thus make index.html slightly cleaner
-*/
-
-	$('head').append(
-		'<link rel="stylesheet" type="text/css" media="screen" title="Default" href="library/style.css" />'+
-		'<title>New Tab</title>'+
-		'<link rel="shortcut icon" href="library/favicon.png" type="image/png" />'
-	);
 
 /**
 	Get URLs from the document body
@@ -143,17 +132,6 @@ $(document).ready(function(){
 
 	$('#container').append(
 		html+'</div><span id="prev"></span><span id="next"></span>'
-	);
-
-/**
-	Add page numbers to the paragraph
-*/
-
-	$('#container div').each(
-		function(index) {
-			var page = index+1;
-			$('#pages').append('<span>' + page + '</span>');
-		}
 	);
 
 /**
