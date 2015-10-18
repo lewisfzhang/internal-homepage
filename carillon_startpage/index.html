@@ -1,119 +1,122 @@
 <!DOCTYPE HTML>
 <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Carillon Start Page</title>
 	<link rel="shortcut icon" href="library/favicon.png" type="image/png" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<!--<script type="text/javascript" src="library/jquery.js"></script>
-	<script type="text/javascript" src="library/main.js"></script>-->
 	<link rel="stylesheet" type="text/css" media="screen" title="Default" href="library/style.css" />
+	<script type="text/javascript" src="library/staff.js"></script>
 </head>
 <body>
 	
+	<!--Buttons that change the color of the links-->
 	<div id="staffButtons">
+		<button class="staffButton" onClick="staff('regular')">Regular</button>
 		<button class="staffButton" onClick="staff('photo')">Photography Staff</button>
 		<button class="staffButton" onClick="staff('design')">Design Staff</button>
 		<button class="staffButton" onClick="staff('journalism')">Journalism Staff</button>
 		<button class="staffButton" onClick="staff('software')">Software Development Staff</button>
 	</div>
 	
+	<!--Heading-->
 	<div id="heading">
 		<h1>Carillon Staff</h1> 
 	</div>
 	
+	<!--Links to all of the applicaitons-->
 	<div id="linksDiv">
 		<div class="links">
-			<a href="https://carillon.slack.com" target="_blank"><img src="https://logo.clearbit.com/slack.com" greyscale="true"></a>
+			<a href="https://carillon.slack.com" target="_blank"><img id="slack" src="https://logo.clearbit.com/slack.com"></a>
 			<p class="linkText">Slack</p>
 		</div>
 		
 		<!--No border for this logo b/c the edges are rounded-->
 		<div class="links">
-			<a href="https://trello.com/20152016carillon" target="_blank"><img src="https://logo.clearbit.com/trello.com" style="border-style: none;"></a>
+			<a href="https://trello.com/20152016carillon" target="_blank"><img id="trello" src="https://logo.clearbit.com/trello.com" style="border-style: none;"></a>
 			<p class="linkText">Trello</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://carillon.ezofficeinventory.com" target="_blank"><img src="https://logo.clearbit.com/ezofficeinventory.com"></a>
+			<a href="https://carillon.ezofficeinventory.com" target="_blank"><img id="ezoffice" src="https://logo.clearbit.com/ezofficeinventory.com"></a>
 			<p class="linkText">EZOfficeInventory </p>
 		</div>
 		
 		<div class="links">
-			<a href="https://webs.bcp.org/mydrive/carillon" target="_blank"><img src="https://logo.clearbit.com/synergyservicescorp.com"></a>
+			<a href="https://webs.bcp.org/mydrive/carillon" target="_blank"><img id="synergy" src="https://logo.clearbit.com/synergyservicescorp.com"></a>
 			<p class="linkText">Synergy Server</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://mail.bcp.org/owa" target="_blank"><img src="https://logo.clearbit.com/outlook.com"></a>
+			<a href="https://mail.bcp.org/owa" target="_blank"><img id="outlook" src="https://logo.clearbit.com/outlook.com"></a>
 			<p class="linkText">BCP Mail</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://carillon.pingboard.com" target="_blank"><img src="https://logo.clearbit.com/pingboard.com"></a>
+			<a href="https://carillon.pingboard.com" target="_blank"><img id="pingboard" src="https://logo.clearbit.com/pingboard.com"></a>
 			<p class="linkText">Pingboard</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://bitbucket.org/carillon/" target="_blank"><img src="https://logo.clearbit.com/bitbucket.org"></a>
+			<a href="https://bitbucket.org/carillon/" target="_blank"><img id="bitbucket" src="https://logo.clearbit.com/bitbucket.com"></a>
 			<p class="linkText">Bitbucket</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://bcp.instructure.com" target="_blank"><img src="https://logo.clearbit.com/canvas.instructure.com"></a>
+			<a href="https://bcp.instructure.com" target="_blank"><img src="thumbnails/canvas.png"></a>
 			<p class="linkText">Canvas</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://secure.zenfolio.com/carillon/login.html?return=http%3A%2F%2Fcarillon.zenfolio.com%2F" target="_blank"><img src="https://logo.clearbit.com/zenfolio.com"></a>
+			<a href="https://secure.zenfolio.com/carillon/login.html?return=http%3A%2F%2Fcarillon.zenfolio.com%2F" target="_blank"><img id="zenfoliologin" src="https://logo.clearbit.com/zenfolio.com"></a>
 			<p class="linkText">Zenfolio Login</p>
 		</div>
 
 		<div class="links">
-			<a href="https://bcp.org/photos" target="_blank"><img src="https://logo.clearbit.com/zenfolio.com"></a>
+			<a href="https://bcp.org/photos" target="_blank"><img id="zenfoliopublic" src="https://logo.clearbit.com/zenfolio.com"></a>
 			<p class="linkText">Zenfolio Public</p>
 		</div>
 )
 		<div class="links">
-			<a href="https://carillon.camayak.com" target="_blank"><img src="thumbnails/camayak.png" width="128px" height="128px"></a>
+			<a href="https://carillon.camayak.com" target="_blank"><img src="thumbnails/camayak.png"></a>
 			<p class="linkText">Camayak</p>
 		</div>
 
 		<div class="links">
-			<a href="http://thecarillon.org/wp-admin" target="_blank"><img src="https://logo.clearbit.com/wordpress.com"></a>
+			<a href="http://thecarillon.org/wp-admin" target="_blank"><img id="wordpress" src="https://logo.clearbit.com/wordpress.com"></a>
 			<p class="linkText">Wordpress</p>
 		</div>
 
 		<div class="links">
-			<a href="https://bcp.org/schoolsuite" target="_blank"><img src="thumbnails/schoolsuite.jpg" width="128px" height="128px"></a>
+			<a href="https://bcp.org/schoolsuite" target="_blank"><img src="thumbnails/schoolsuite.jpg"></a>
 			<p class="linkText">Schoolsuite</p>
 		</div>
 		<div class="links">
-			<a href="http://thecarillon.org" target="_blank"><img src="https://logo.clearbit.com/thecarillon.org"></a>
+			<a href="http://thecarillon.org" target="_blank"><img id="carillon" src="https://logo.clearbit.com/thecarillon.org"></a>
 			<p class="linkText">Carillon Online</p>
 		</div>
 
 		<div class="links">
-			<a href="https://app.frontify.com/d/R2BVWFpXU1ef/odyssey-style-guide" target="_blank"><img src="https://logo.clearbit.com/frontify.com"></a>
+			<a href="https://app.frontify.com/d/R2BVWFpXU1ef/odyssey-style-guide" target="_blank"><img id="design" src="https://logo.clearbit.com/frontify.com"></a>
 			<p class="linkText">Design Style Guide</p>
 		</div>
 
 		<div class="links">
-			<a href="https://pinterest.com" target="_blank"><img src="https://logo.clearbit.com/pinterest.com"></a>
+			<a href="https://pinterest.com" target="_blank"><img id="pinterest" src="https://logo.clearbit.com/pinterest.com"></a>
 			<p class="linkText">Pinterest</p>
 		</div>
 
 		<div class="links">
-			<a href="https://twitter.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/twitter.com"></a>
+			<a href="https://twitter.com/BCPCarillon" target="_blank"><img id="twitter" src="https://logo.clearbit.com/twitter.com"></a>
 			<p class="linkText">Carillon Twitter</p>
 		</div>
 		
 		<div class="links">
-			<a href="https://facebook.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/facebook.com"></a>
+			<a href="https://facebook.com/BCPCarillon" target="_blank"><img id="fb" src="https://logo.clearbit.com/facebook.com"></a>
 			<p class="linkText">Carillon FB</p>
 		</div>
 		
 		<!--No border for this logo b/c the edges are rounded-->
 		<div class="links">
-			<a href="https://instagram.com/BCPCarillon" target="_blank"><img src="https://logo.clearbit.com/instagram.com" style="border-style: none;"></a>
+			<a href="https://instagram.com/BCPCarillon" target="_blank"><img id="ig" src="https://logo.clearbit.com/instagram.com" style="border-style: none;"></a>
 			<p class="linkText">Carillon IG</p>
 		</div>
 	</div>
